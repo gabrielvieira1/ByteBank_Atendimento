@@ -282,6 +282,7 @@ namespace ByteBank_Atendimento.bytebank.Atendimento
           using (var streamwriter = new StreamWriter(fs))
           {
             streamwriter.WriteLine(json);
+            streamwriter.Flush();
           }
           Console.WriteLine(@"Arquivo salvo em C:\Users\Biel\Documents\workspaces\vs\ByteBank_Atendimento\tmp\export\");
           Console.ReadKey();
